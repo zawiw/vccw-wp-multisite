@@ -9,17 +9,17 @@ include_recipe 'apache2::mod_ssl'
 include_recipe 'mysql::server'
 include_recipe 'mysql::ruby'
 
-service "iptables" do
-  supports :status => true, :restart => true
-  action [:enable, :start]
-end
-
-template "/etc/sysconfig/iptables" do
-  source "wordpress-iptables.erb"
-  owner "root"
-  group "root"
-  mode "0600"
-end
+# service "iptables" do
+#   supports :status => true, :restart => true
+#   action [:enable, :start]
+# end
+#
+# template "/etc/sysconfig/iptables" do
+#   source "wordpress-iptables.erb"
+#   owner "root"
+#   group "root"
+#   mode "0600"
+# end
 
 execute "mysql-install-wp-privileges" do
   command "/usr/bin/mysql -u root -p\"#{node[:mysql][:server_root_password]}\" < #{node[:mysql][:conf_dir]}/wp-grants.sql"

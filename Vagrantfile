@@ -102,7 +102,7 @@ Vagrant.configure(2) do |config|
         :listen_ports => ['80', '443']
       },
       :php => {
-        :packages => %w(php php-cli php-devel php-mbstring php-gd php-xml php-mysql),
+        :packages => %w(php5-fpm php5-cli php5-common php5-dev php5-memcache php5-imagick php5-mcrypt php5-mysql php5-imap php5-curl php-pear php5-gd),
         :directives => {
             'default_charset'            => 'UTF-8',
             'mbstring.language'          => 'neutral',
