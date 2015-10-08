@@ -30,7 +30,6 @@ end
 node[:nginx][:packages].each do | pkg |
   package pkg do
     action [:install, :upgrade]
-    options "--enablerepo=epel"
   end
 end
 
