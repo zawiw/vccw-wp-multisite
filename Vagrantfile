@@ -185,7 +185,7 @@ Vagrant.configure(2) do |config|
         }
       }
     }
-
+    chef.add_recipe 'nginx'
     chef.add_recipe 'wpcli'
     chef.add_recipe 'wpcli::install'
     if true != _conf['disable_vccw_cookbook']

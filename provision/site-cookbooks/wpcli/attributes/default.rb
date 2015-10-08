@@ -20,7 +20,7 @@ default[:wpcli][:link] = '/usr/local/bin/wp'
 default[:wpcli][:locale] = ""
 default[:wpcli][:wp_version] = "latest"
 
-default[:wpcli][:wp_host] = "wordpress.local"
+default[:wpcli][:wp_host] = "vccw.dev"
 default[:wpcli][:wp_home] = ""
 default[:wpcli][:wp_siteurl] = ""
 default[:wpcli][:wp_docroot] = "/var/www/wordpress"
@@ -56,3 +56,6 @@ default[:wpcli][:always_reset] = true
 
 default[:wpcli][:options] = {}
 default[:wpcli][:rewrite_structure] = '/archives/%post_id%'
+
+
+
