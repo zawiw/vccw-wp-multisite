@@ -1,0 +1,19 @@
+# encoding: utf-8
+
+version: 4.4.1
+multisite: true
+
+#
+# DB will be reset when provision
+#
+reset_db_on_provision: true
+
+#
+# Are you hurrying a lot?
+#
+disable_vccw_cookbook: false
+
+#
+# phpenv
+#
+php_version: 5.5.9
